@@ -41,7 +41,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/marple@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/marple@sha256:8e44b4b5dc8e87af449ce54689fe6d3a6c57d8f3aa37ff6510003ee1757809d7
   platforms: [linux/amd64, linux/arm64]
   command: ["python", "/opt/tool/marple.py", "--threshold", "{threshold}", "{username}"]
   output_format: text
